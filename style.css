@@ -983,27 +983,111 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  .typing-text {
+    font-size: 1.6rem;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  section {
+    padding: 80px 30px;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding: 15px 20px;
   }
   .nav-links {
-    display: none;
+    display: none; /* Thường thì trên mobile sẽ dùng Hamburger menu, tạm thời ẩn */
+  }
+  
+  /* Hero Responsive */
+  .hero-content {
+    padding-top: 80px; /* Tránh bị header che */
   }
   .hero-content h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
+  .typing-text {
+    font-size: 1.3rem;
+  }
+  .avatar-placeholder {
+    width: 120px;
+    height: 120px;
+  }
+  .avatar-text {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    font-size: 1rem;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+  }
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  /* Section Responsive */
   section {
-    padding: 80px 20px;
+    padding: 60px 15px;
   }
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+  }
+  
+  /* Project Responsive */
   .project-item {
-    padding: 25px;
+    padding: 20px;
   }
+  .project-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  /* Contact Responsive */
   .contact-container {
-    padding: 30px;
+    padding: 25px 20px;
+    flex-direction: column;
+    gap: 30px;
   }
+  .contact-info, .contact-form {
+    min-width: 100%;
+  }
+  
   footer {
     flex-direction: column;
     gap: 15px;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .typing-text {
+    font-size: 1.1rem;
+  }
+  .about-card {
+    padding: 20px;
+  }
+  .skills-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .tech-stack span {
+    font-size: 0.8rem;
+    padding: 5px 10px;
   }
 }

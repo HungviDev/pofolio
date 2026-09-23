@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hùng Vĩ - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo animate-fade-in-down">Nguyễn Hùng Vĩ</div>
+        <nav class="animate-fade-in-down delay-100">
+            <ul class="nav-links">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Thông tin & Kỹ năng</a></li>
+                <li><a href="#portfolio">Dự án thực tế</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        
+        <!-- Hiệu ứng Background (Particles/Hình học) -->
+        <div class="hero-bg-elements">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-avatar animate-zoom-in">
+                <div class="avatar-placeholder">
+                    <span class="avatar-text">NHV</span>
+                    <div class="avatar-ring"></div>
+                </div>
+            </div>
+            
+            <div class="title-wrapper">
+                <h1 class="animate-fade-in-up delay-100 text-gradient glitched-text" data-text="Nguyễn Hùng Vĩ">Nguyễn Hùng Vĩ</h1>
+                <div class="typing-container animate-fade-in-up delay-200">
+                    <h2 class="typing-text">FrontEnd Developer</h2>
+                </div>
+            </div>
+
+            <p class="animate-fade-in-up delay-300 hero-description">
+                FrontEnd Developer với 2 năm kinh nghiệm chuyên sâu về <strong>Angular</strong>, TypeScript, và hệ sinh thái Web. Đam mê xây dựng UI mượt mà, tối ưu hiệu năng. Có định hướng phát triển trở thành Full Stack Developer với Java Spring Boot.
+            </p>
+            
+            <div class="cta-buttons animate-fade-in-up delay-400">
+                <a href="#portfolio" class="btn primary btn-glow pulse-on-hover">
+                    <span>Xem dự án</span>
+                    <i class="icon-arrow">→</i>
+                </a>
+                <a href="#contact" class="btn secondary btn-outline">Liên hệ ngay</a>
+            </div>
+            
+            <div class="scroll-indicator animate-fade-in-up delay-400">
+                <a href="#about">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title scroll-animate">Thông tin & Kỹ năng</h2>
+        <div class="about-grid">
+            
+            <!-- Cột Kỹ năng (Nổi bật nhất) -->
+            <div class="about-card skills-card scroll-animate" style="grid-column: 1 / -1;">
+                <h3><span class="icon spin-on-hover">💻</span> Kỹ Năng Chuyên Môn (Technical Skills)</h3>
+                <div class="skills-wrapper">
+                    <div class="skill-category">
+                        <h4>FrontEnd</h4>
+                        <div class="tech-stack">
+                            <span>Angular</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>SCSS</span><span>RxJS</span><span>Angular Signals</span><span>Ng-Zorro</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>BackEnd (Basic)</h4>
+                        <div class="tech-stack">
+                            <span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>Spring Data JPA</span><span>RESTful APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Database & Tools</h4>
+                        <div class="tech-stack">
+                            <span>SQL Server</span><span>MySQL</span><span>Git / GitHub</span><span>GitLab</span><span>Swagger</span><span>PostMan</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>AI Coding Tools</h4>
+                        <div class="tech-stack highlight-stack">
+                            <span>AI-assisted Coding</span><span>Code Debugging</span><span>Code Review</span><span>Code Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột Học vấn & Chứng chỉ -->
+            <div class="about-card scroll-animate delay-100">
+                <h3><span class="bounce-on-hover">🎓</span> Học vấn & Chứng chỉ</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">09/2022 - 09/2026</span>
+                        <h4>Hanoi University of Architecture</h4>
+                        <p>Major: Information Technology (GPA: 3.23/4)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2026</span>
+                        <h4>Giải Khuyến khích NCKH</h4>
+                        <p>Received an honorable mention in the student scientific research competition.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2022</span>
+                        <h4>Học bổng thành tích</h4>
+                        <p>Academic achievement scholarships.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột Thông tin thêm -->
+            <div class="about-card scroll-animate delay-200">
+                <h3><span class="shake-on-hover">💡</span> Thông tin khác & Mục tiêu</h3>
+                <ul class="info-list">
+                    <li><strong>Mục tiêu:</strong> Tận dụng kiến thức chuyên sâu về Angular và mở rộng kỹ năng Backend (Java) để xây dựng ứng dụng web end-to-end hoàn chỉnh.</li>
+                    <li>Sẵn sàng làm việc full-time.</li>
+                    <li>Khả năng đọc hiểu tài liệu kỹ thuật Tiếng Anh tốt.</li>
+                    <li>Học hỏi nhanh, kỹ năng tự học cao, luôn cập nhật công nghệ mới.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2 class="section-title scroll-animate">Kinh Nghiệm & Dự Án Thực Tế</h2>
+        <div class="projects-container">
+            
+            <!-- Dự án 1: FSEL -->
+            <div class="project-item scroll-animate delay-100">
+                <div class="project-header">
+                    <h3>FSEL – English Education Platform (Product)</h3>
+                    <span class="project-date">September 2024 – Present</span>
+                </div>
+                <div class="project-meta">
+                    <span class="role">Vị trí: <strong>FrontEnd Developer</strong></span>
+                    <span class="team">Quy mô team: 14 (5 FE, 5 BE, 2 QA, 2 BA)</span>
+                </div>
+                <p class="project-desc"><strong>Mô tả:</strong> Nền tảng học tiếng Anh trực tuyến cung cấp tính năng quản lý khóa học, nội dung học tập số, bài kiểm tra, bài tập, đánh giá và theo dõi tiến độ học tập. Hỗ trợ học viên, giảng viên và quản trị viên trong suốt quá trình học.</p>
+                <div class="tech-stack project-tech">
+                    <span>Angular</span><span>TypeScript</span><span>RxJS</span><span>Angular Signals</span><span>Ng-Zorro</span><span>SCSS</span><span>RESTful APIs</span>
+                </div>
+                <div class="project-tasks">
+                    <strong>Trách nhiệm chính (Responsibilities):</strong>
+                    <ul>
+                        <li>Phát triển UI responsive và reusable sử dụng Angular, TypeScript, HTML5, CSS3/SCSS và Ng-Zorro.</li>
+                        <li>Tích hợp RESTful APIs và triển khai dynamic forms với Reactive Forms, custom validation và business rules.</li>
+                        <li>Debug và giải quyết các vấn đề frontend trên UI, logic nghiệp vụ, tích hợp API.</li>
+                        <li>Tối ưu hóa hiệu năng ứng dụng bằng Angular Signals, RxJS, Lazy Loading và OnPush Change Detection.</li>
+                        <li>Chuyển đổi thiết kế Figma thành giao diện responsive tương thích đa trình duyệt.</li>
+                        <li>Phối hợp cùng team Backend, QA, BA, và UI/UX để phát hành tính năng và giải quyết lỗi.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dự án 2: Lê Hồng Phong -->
+            <div class="project-item scroll-animate delay-200">
+                <div class="project-header">
+                    <h3>Lê Hồng Phong Management Training Platform (Outsource)</h3>
+                    <span class="project-date">October 2025 – May 2026</span>
+                </div>
+                <div class="project-meta">
+                    <span class="role">Vị trí: <strong>FrontEnd Developer</strong></span>
+                    <span class="team">Quy mô team: 6 (2 FE, 2 BE, 1 BA, 1 QA)</span>
+                </div>
+                <p class="project-desc"><strong>Mô tả:</strong> Nền tảng quản lý đào tạo trên web thuộc hệ sinh thái giáo dục Lê Hồng Phong, hỗ trợ quản trị viên, giảng viên và người học trong việc quản lý chương trình đào tạo, khóa học, đánh giá và tiến trình học tập.</p>
+                <div class="tech-stack project-tech">
+                    <span>Angular</span><span>TypeScript</span><span>RxJS</span><span>Ng-Zorro</span><span>SCSS</span><span>HttpClient</span>
+                </div>
+                <div class="project-tasks">
+                    <strong>Trách nhiệm chính (Responsibilities):</strong>
+                    <ul>
+                        <li>Phát triển UI responsive và reusable sử dụng Angular, TypeScript, SCSS và Ng-Zorro.</li>
+                        <li>Triển khai Reactive Forms, custom validators, dynamic fields và business rules.</li>
+                        <li>Tích hợp RESTful APIs sử dụng HttpClient, xử lý request/response, mapping data và lỗi.</li>
+                        <li>Sử dụng RxJS và Observables để quản lý luồng dữ liệu API và các thao tác bất đồng bộ.</li>
+                        <li>Triển khai HTTP Interceptors cho việc xác thực (authentication), xử lý request chung và xử lý lỗi.</li>
+                        <li>Debug và giải quyết các issue liên quan đến UI, forms, tích hợp API và logic nghiệp vụ.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title scroll-animate">Thông Tin Liên Hệ</h2>
+        <div class="contact-container scroll-animate delay-100">
+            <div class="contact-info">
+                <h3>Hãy kết nối với tôi!</h3>
+                <p>Tôi luôn sẵn sàng cho các cơ hội công việc mới và mong muốn được đóng góp giá trị cho dự án của bạn.</p>
+                <br>
+                <ul class="contact-list">
+                    <li><span class="icon">📍</span> Hưng Yên</li>
+                    <li><span class="icon">📞</span> 033 779 2757</li>
+                    <li><span class="icon">✉️</span> hungviga@gmail.com</li>
+                    <li><span class="icon">🎂</span> 20/08/2004</li>
+                </ul>
+       
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Tên của bạn" required>
+                <input type="email" placeholder="Email của bạn" required>
+                <textarea placeholder="Tin nhắn..." rows="5" required></textarea>
+                <button type="submit" class="btn primary pulse-on-hover">Gửi tin nhắn</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Nguyễn Hùng Vĩ - FrontEnd Developer. Cập nhật từ CV.</p>
+        <a href="#home" class="back-to-top">Lên đầu trang ⇧</a>
+    </footer>
+
+    <!-- JS for Scroll Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        // Tùy chọn ngừng observe sau khi đã hiện (để không animate lại)
+                        // observer.unobserve(entry.target); 
+                    }
+                });
+            }, {
+                threshold: 0.15, // Kích hoạt khi 15% element vào viewport
+                rootMargin: "0px 0px -50px 0px"
+            });
+
+            const hiddenElements = document.querySelectorAll('.scroll-animate');
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

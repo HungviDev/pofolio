@@ -145,9 +145,10 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+  width: max-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-title::after {
@@ -1043,8 +1044,10 @@ footer {
     padding: 60px 15px;
   }
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 35px;
+    letter-spacing: 1px;
+    width: max-content;
   }
   
   /* Project Responsive */
@@ -1053,6 +1056,14 @@ footer {
   }
   .project-header h3 {
     font-size: 1.3rem;
+  }
+  .project-date {
+    display: inline-block;
+    margin-top: 5px;
+  }
+  .project-meta {
+    flex-direction: column;
+    gap: 10px;
   }
   
   /* Contact Responsive */
@@ -1079,6 +1090,12 @@ footer {
   }
   .typing-text {
     font-size: 1.1rem;
+  }
+  .section-title {
+    font-size: 1.2rem;
+    white-space: normal;
+    word-break: break-word;
+    width: 100%;
   }
   .about-card {
     padding: 20px;
